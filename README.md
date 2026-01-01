@@ -9,7 +9,7 @@
   <a href="https://github.com/adverant/Adverant-Nexus-Plugin-Robotics/actions"><img src="https://github.com/adverant/Adverant-Nexus-Plugin-Robotics/workflows/CI/badge.svg" alt="CI Status"></a>
   <a href="https://github.com/adverant/Adverant-Nexus-Plugin-Robotics/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
   <a href="https://marketplace.adverant.ai/plugins/robotics"><img src="https://img.shields.io/badge/Nexus-Marketplace-purple.svg" alt="Nexus Marketplace"></a>
-  <a href="https://discord.gg/adverant"><img src="https://img.shields.io/discord/123456789?color=7289da&label=Discord" alt="Discord"></a>
+  <a href="https://discord.gg/adverant"><img src="https://img.shields.io/badge/Discord-Community-7289da.svg" alt="Discord"></a>
 </p>
 
 <p align="center">
@@ -135,7 +135,7 @@ curl -X POST "https://api.adverant.ai/proxy/nexus-robotics/api/v1/motion/plan" \
 ### Manufacturing
 
 #### 1. Pick and Place Optimization
-AI-optimized pick and place operations with vision-guided picking, achieving 30% faster cycle times while reducing product damage.
+AI-optimized pick and place operations with vision-guided picking for faster cycle times and reduced product damage.
 
 #### 2. Welding Path Planning
 Generate optimal welding paths with real-time seam tracking, heat management, and weld quality prediction.

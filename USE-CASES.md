@@ -68,15 +68,13 @@ robotics.events.on('batch.progress', (event) => {
 });
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Orders per hour | 850 | 1,240 | **+46%** |
-| Average pick time | 4.2 min | 2.8 min | **-33%** |
-| Traffic incidents | 12/day | 0/day | **-100%** |
-| Operators required | 5/shift | 1/shift | **-80%** |
-| Robot utilization | 62% | 89% | **+44%** |
+- **Higher order throughput** through optimized path planning
+- **Faster pick times** with AI-guided operations
+- **Reduced traffic incidents** via intelligent routing
+- **Fewer operators required** per shift
+- **Improved robot utilization** across fleet
 
 ---
 
@@ -174,15 +172,13 @@ async def inspect_part(part_id: str, batch_id: str):
     return result
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Inspection throughput | 400/hour | 1,200/hour | **+200%** |
-| Defect detection rate | 85% | 99.7% | **+17%** |
-| False positive rate | 8% | 0.3% | **-96%** |
-| Labor cost (annual) | $480K | $80K | **-83%** |
-| Defect traceability | None | 100% | **Complete** |
+- **Higher inspection throughput** with parallel processing
+- **Improved defect detection** via AI vision models
+- **Lower false positive rates** through multi-stage verification
+- **Reduced labor costs** for quality control
+- **Complete defect traceability** for every component
 
 ---
 
@@ -280,15 +276,13 @@ console.log(`Coverage efficiency: ${report.coverageEfficiency}%`);
 console.log(`Chemical savings vs manual: ${report.chemicalSavingsPercent}%`);
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Planning time per field | 2 hours | 5 minutes | **-96%** |
-| Coverage efficiency | 78% | 98% | **+26%** |
-| Chemical usage | Baseline | -22% | **-22%** |
-| Mission completion rate | 71% | 96% | **+35%** |
-| Acres per day | 800 | 2,400 | **+200%** |
+- **Faster flight planning** per field with automation
+- **Better coverage efficiency** reducing overlaps
+- **Reduced chemical usage** through precision targeting
+- **Higher mission completion rates** via weather-aware planning
+- **More acres covered per day** with coordinated fleets
 
 ---
 
@@ -403,15 +397,13 @@ client.events.on('security.tamper_detected', async (event) => {
 )
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Deliveries per robot/day | 18 | 32 | **+78%** |
-| On-time delivery rate | 72% | 94% | **+31%** |
-| Average delivery time | 38 min | 24 min | **-37%** |
-| Security incidents | 3/week | 0.2/week | **-93%** |
-| Customer satisfaction | 3.8/5 | 4.6/5 | **+21%** |
+- **More deliveries per robot per day** with optimized routing
+- **Higher on-time delivery rates** via real-time traffic data
+- **Faster average delivery times** through smart scheduling
+- **Fewer security incidents** with AI-powered monitoring
+- **Improved customer satisfaction** with reliable service
 
 ---
 
@@ -545,16 +537,14 @@ forecast.forEach(item => {
 });
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Worker exposure hours | 2,400/year | 120/year | **-95%** |
-| Inspection coverage | 60% | 100% | **+67%** |
-| Anomaly detection rate | 45% | 94% | **+109%** |
-| Unplanned downtime | 180 hrs/year | 24 hrs/year | **-87%** |
-| Compliance score | 78% | 99% | **+27%** |
-| Maintenance cost | Baseline | -35% | **-35%** |
+- **Reduced worker exposure** to hazardous environments
+- **Complete inspection coverage** across all assets
+- **Improved anomaly detection** via AI analysis
+- **Less unplanned downtime** through predictive maintenance
+- **Higher compliance scores** with documented inspections
+- **Lower maintenance costs** through proactive repairs
 
 ---
 

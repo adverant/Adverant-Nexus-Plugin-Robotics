@@ -1,0 +1,114 @@
+{
+  "name": "nexus-robotics",
+  "displayName": "RoboticsAI - Autonomous Robot Fleet Management",
+  "version": "1.0.0",
+  "description": "AI-powered robotics fleet management for hospitality and logistics. Service robot orchestration, path planning, task automation, and maintenance scheduling.",
+  "developer": {
+    "name": "Adverant",
+    "url": "https://adverant.ai",
+    "email": "plugins@adverant.ai",
+    "verified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adverant/Adverant-Nexus-Plugin-Robotics"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "robotics",
+    "fleet-management",
+    "automation",
+    "service-robots",
+    "path-planning",
+    "hospitality"
+  ],
+  "nexus": {
+    "minVersion": "1.0.0",
+    "executionMode": "mcp_container",
+    "isolationLevel": 2,
+    "capabilities": [
+      "fleet-management",
+      "task-orchestration",
+      "path-planning",
+      "maintenance-scheduling",
+      "telemetry",
+      "analytics"
+    ],
+    "permissions": [
+      "network:external",
+      "filesystem:temp",
+      "service:mageagent"
+    ],
+    "entrypoint": "dist/index.js",
+    "healthCheck": "/health",
+    "readinessCheck": "/ready",
+    "livenessCheck": "/live"
+  },
+  "resources": {
+    "cpuMillicores": 1000,
+    "memoryMB": 2048,
+    "diskGB": 5,
+    "timeoutMs": 60000,
+    "maxConcurrentJobs": 50
+  },
+  "api": {
+    "version": "v1",
+    "basePath": "/api/v1/robotics",
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/fleet",
+        "description": "Get fleet status"
+      },
+      {
+        "method": "POST",
+        "path": "/tasks",
+        "description": "Assign task to robot"
+      },
+      {
+        "method": "POST",
+        "path": "/navigation/plan",
+        "description": "Plan navigation path"
+      },
+      {
+        "method": "GET",
+        "path": "/telemetry/:robotId",
+        "description": "Get robot telemetry"
+      }
+    ]
+  },
+  "pricing": {
+    "model": "tiered",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "starter",
+        "displayName": "Starter",
+        "priceMonthly": 9900,
+        "limits": { "robots": 5 },
+        "features": ["basic-management", "task-assignment"]
+      },
+      {
+        "name": "professional",
+        "displayName": "Professional",
+        "priceMonthly": 29900,
+        "limits": { "robots": 25 },
+        "features": ["fleet-optimization", "path-planning", "analytics"],
+        "popular": true
+      },
+      {
+        "name": "enterprise",
+        "displayName": "Enterprise",
+        "priceMonthly": -1,
+        "limits": { "robots": -1 },
+        "features": ["unlimited", "multi-site", "custom-integration"]
+      }
+    ]
+  },
+  "marketplace": {
+    "category": "automation",
+    "subcategory": "robotics",
+    "featured": false,
+    "tags": ["robotics", "fleet-management", "automation", "hospitality", "logistics"]
+  }
+}
